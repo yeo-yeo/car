@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
-import { Canvas } from 'Canvas';
+import React from 'react';
+import { Page } from 'Page';
 import { WebsocketsProvider } from 'WebsocketsContext';
 import { IdentityProvider } from 'IdentityContext';
 
 export const App = () => {
-    const [initialCanvasContent, setInitialCanvasContent] = useState<
-        Record<string, string>
-    >({});
-
     return (
         <>
-            <IdentityProvider>
+            {/* <IdentityProvider>
                 <WebsocketsProvider
                     setInitialCanvasContent={setInitialCanvasContent}
-                >
-                    <Canvas initialCanvasState={initialCanvasContent} />
-                </WebsocketsProvider>
-            </IdentityProvider>
+                > */}
+            <Page />
+            {/* </WebsocketsProvider>
+            </IdentityProvider> */}
         </>
     );
 };

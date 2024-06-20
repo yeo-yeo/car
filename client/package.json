@@ -6,7 +6,8 @@
     "scripts": {
         "build": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js",
         "watch": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js --watch",
-        "lint": "eslint ."
+        "lint": "eslint .",
+        "serve": "http-server -p 3001"
     },
     "eslintIgnore": [
         "node_modules, public"
