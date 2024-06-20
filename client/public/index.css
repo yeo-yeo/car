@@ -2,6 +2,15 @@ body {
     background-color: #222222;
 }
 
-canvas {
-    background-color: #eeeeee;
+button {
+    font-size: 24px;
+}
+
+.grid button {
+    width: 36px;
+    height: 36px
+}
+
+button:active {
+    background-color: deepskyblue;
 }

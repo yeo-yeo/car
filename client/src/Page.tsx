@@ -1,34 +1,54 @@
+import { sendMove } from 'helpers/sendMove';
 import React from 'react';
 
 export const Page = () => {
     return (
-        <>
-            <button
-                onClick={() => {
-                    fetch(`http://localhost:3000/move`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ data: 'F' }),
-                    })
-                        .then(console.log)
-                        .catch((e) => console.error(e));
+        <div
+            style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: '90vh',
+            }}
+        >
+            <div
+                style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr 1fr',
+                    gridGap: '10px',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '150px',
+                    width: '150px',
+                    textAlign: 'center',
                 }}
+                className="grid"
             >
-                F
+                <div></div>
+                <div>
+                    {' '}
+                    <button onClick={() => sendMove('F')}>F</button>
+                </div>
+                <div></div>
+                <div>
+                    <button onClick={() => sendMove('L')}>L</button>
+                </div>
+                <div></div>
+                <div>
+                    <button onClick={() => sendMove('R')}>R</button>
+                </div>
+                <div></div>
+                <div>
+                    {' '}
+                    <button onClick={() => sendMove('B')}>B</button>
+                </div>
+                <div></div>
+            </div>
+
+            <button onClick={() => sendMove('S')} style={{ marginTop: '64px' }}>
+                Stop
             </button>
-            <button
-                onClick={() => {
-                    fetch(`http://localhost:3000/move`, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ data: 'B' }),
-                    })
-                        .then(console.log)
-                        .catch((e) => console.error(e));
-                }}
-            >
-                B
-            </button>
-        </>
+        </div>
     );
 };

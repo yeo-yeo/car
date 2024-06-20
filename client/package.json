@@ -1,11 +1,11 @@
 {
-    "name": "doodle",
+    "name": "car",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "build": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js",
-        "watch": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js --watch",
+        "watch": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js --watch=forever",
         "lint": "eslint ."
     },
     "eslintIgnore": [

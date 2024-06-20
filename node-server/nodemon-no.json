@@ -1,0 +1,1 @@
+{ "watch": ["src", "../client/public"], "ext": "js,html,css" }

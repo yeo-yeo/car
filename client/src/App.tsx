@@ -4,6 +4,8 @@ import { WebsocketsProvider } from 'WebsocketsContext';
 import { IdentityProvider } from 'IdentityContext';
 
 export const App = () => {
+    // please
+    // go on
     return (
         <>
             {/* <IdentityProvider>

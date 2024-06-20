@@ -5,21 +5,15 @@ trap 'kill $(jobs -p)' EXIT
 set -e
 set -x
 
-source /Users/gillian/.pyenv/versions/car/bin/activate
+# source /Users/gillian/.pyenv/versions/car/bin/activate
 
 # echo "😀"
 # echo $(pip list)
 
-cd client
-npm i
-npm run build
-
-cd ../node-server
-npm i
-npm run build
+npm run watch --prefix client &
+npm run watch --prefix node-server
 
 # y u no work
-npm start
 # &
 # ../python/move_receiver.py
 
