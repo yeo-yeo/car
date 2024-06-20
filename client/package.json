@@ -6,8 +6,7 @@
     "scripts": {
         "build": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js",
         "watch": "esbuild src/Router.tsx --bundle --sourcemap --outfile=public/bundle.js --watch",
-        "lint": "eslint .",
-        "serve": "http-server -p 3001"
+        "lint": "eslint ."
     },
     "eslintIgnore": [
         "node_modules, public"
@@ -37,7 +36,6 @@
         "eslint-plugin-promise": "^6.1.1",
         "eslint-plugin-react": "^7.34.1",
         "eslint-plugin-react-hooks": "^4.6.0",
-        "http-server": "^14.1.1",
         "prettier": "3.2.5",
         "typescript": "^5.4.5"
     }

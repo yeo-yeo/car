@@ -15,4 +15,4 @@ RUN npm install
 RUN npm run build
 
 # Start server
-RUN npm start
+CMD [ "npm start" ]
