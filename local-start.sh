@@ -7,9 +7,6 @@ set -x
 
 source /Users/gillian/.pyenv/versions/car/bin/activate
 
-# echo "😀"
-# echo $(pip list)
-
 cd client
 npm i
 npm run build
@@ -18,9 +15,8 @@ cd ../node-server
 npm i
 npm run build
 
-# y u no work
 npm start
-# &
-# ../python/move_receiver.py
+&
+python ../python/move_receiver.py
 
 wait

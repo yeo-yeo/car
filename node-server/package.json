@@ -5,6 +5,7 @@
   "scripts": {
     "build": "esbuild src/index.ts --platform=node --bundle --sourcemap --outfile=dist/index.js",
     "watch": "esbuild src/index.ts --platform=node --bundle --sourcemap --outfile=dist/index.js --watch=forever & nodemon dist/index.js --watch dist/index.js --delay 0.5s",
+    "start": "./dist/index.js",
     "lint": "eslint ."
   },
   "author": "",
