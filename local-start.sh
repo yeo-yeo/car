@@ -17,6 +17,7 @@ npm run build
 
 npm start
 &
-python ../python/move_receiver.py
+sleep 1 &&
+python ../python/move_receiver.py dev
 
 wait

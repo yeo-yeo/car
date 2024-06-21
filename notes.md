@@ -5,3 +5,8 @@ Code to interact with the Arduino car. The flow is currently:
 - Run move_receiver.py. This is a script which opens a connection to the server, over which moves will be sent, and it will relay to the car over bluetooth.
 - Start client by running npm run serve (in client dir)
 - Visit localhost:3000 and click buttons. Car should move!
+
+
+Or to talk to the prod server
+- ./python/move_receiver.py prod
+- https://car.rcdis.co

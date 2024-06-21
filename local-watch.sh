@@ -9,6 +9,7 @@ source /Users/gillian/.pyenv/versions/car/bin/activate
 
 npm run watch --prefix client &
 npm run watch --prefix node-server &
-./python/move_receiver.py
+sleep 1 &&
+./python/move_receiver.py dev
 
 wait
