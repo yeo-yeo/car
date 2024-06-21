@@ -12,7 +12,7 @@ const start = async () => {
   try {
     const app = fastify();
 
-    await app.register(cors, {
+    app.register(cors, {
       origin: "*",
     });
 
@@ -80,8 +80,8 @@ const start = async () => {
       reply.send("ok");
     });
 
-    await app.listen({ port: 3000 });
-    console.log("Server started on port 3000");
+    await app.listen({ port: 3000, host: "0.0.0.0" });
+    console.log("Server started on port 3000!");
   } catch (err) {
     console.error(err);
     process.exit(1);
